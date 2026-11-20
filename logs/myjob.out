@@ -1,0 +1,27 @@
+Job ID           : 24503609
+Cluster          : spartan
+User/Project     : mdnabili/punim1703
+Nodes            : 1
+Wall-clock time  : 00:00:31 / 3-00:00:00
+
+Displaying overall resources usage from 2026-05-01 10:52:26 to 2026-05-01 10:52:57:
+
+NODE            CPU#        TOT%   ( USR   / SYS   / WIO   / IDLE  ) 
+
+spartan-bm163 : 
+                CPU# 1    : 0.4    (   0.3 /   0.2 /   0.0 /  99.6 ) 
+                CPU# 2    : 19.7   (  18.1 /   1.7 /   0.0 /  80.3 ) 
+                CPU# 3    : 2.8    (   0.4 /   2.4 /   0.0 /  97.2 ) 
+                CPU# 4    : 2.2    (   1.1 /   1.1 /   0.0 /  97.8 ) 
+                CPU# 5    : 4.1    (   0.7 /   3.5 /   0.0 /  95.9 ) 
+
+
+Allocated CPUs            : 5    
+  CPUs with usage <25%    : 5    
+  CPUs with usage <50%    : 0    
+  CPUs with usage >50%    : 0    
+
+Memory used (RAM)         : 0.6%  [312MB of 56204MB]
+
+--------------------------------------------
+

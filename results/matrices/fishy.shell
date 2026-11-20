@@ -1,0 +1,27 @@
+
+
+# Define where you want to copy the found CSV files
+set TARGET_DIR "./collected_csvs"
+mkdir -p $TARGET_DIR
+
+# Loop through all items
+for dir in *
+    # Skip the script itself and the destination folder
+    if test "$dir" = "fishy.shell"; or test "$dir" = "collected_csvs"
+        continue
+    end
+
+    if test -d $dir
+        # Let's see what the script is actually looking for
+        set expected_file "$dir/filtered_"$dir"_snps.csv"
+        echo "Checking: $expected_file"
+
+        if test -f $expected_file
+            echo "--> SUCCESS! Found it. Copying..."
+            cp $expected_file "$TARGET_DIR/"
+        else
+            echo "--> X Not found."
+        end
+    end
+end
+echo "Done!"
