@@ -35,7 +35,8 @@ dir="/data/scratch/projects/punim1703/false_negative/old_tbprof/scripts"
 # The job command(s):
 #python3 "$dir/prep.py"
 python3 "$dir/makematrix.py"
-python3 "$dir/cmh.py" --exclude-fold 0 --min-fn-strata 2 \
+python3 "$dir/cmh.py" --exclude-fold 0 --min-fn-strata 2 --co-resistance \
+  --lineage resources/data/tb-prof_6.6.6_summary.csv \
   --splits /data/scratch/projects/punim1703/nn_tb/REVISION/results/essentials/splits.csv
 python3 "$dir/flag_snps.py"
 
